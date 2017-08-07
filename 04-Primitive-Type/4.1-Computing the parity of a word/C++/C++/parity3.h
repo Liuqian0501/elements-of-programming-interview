@@ -17,6 +17,7 @@ array<short, 1 << 16> BuildTable() {
 
 static array<short, 1 << 16> precomputed_parity = BuildTable();
 
+
 // @include
 short Parity(unsigned long x) {
   const int kMaskSize = 16;
