@@ -15,3 +15,5 @@
 >  7 for dfs, you can try recursion or use stack.
 
 >  8 Instead of updating by the end, keep updating step by step while you are adding elements.
+
+>  9 Write comments before you write code.
