@@ -1,4 +1,4 @@
-# 9.5-Sum the root-to-leaf paths in a binary tree
+# 9.4-Compute the LCA when nodes have parent pointers
 
 >  1 keep the update rule in mind. If the program stagnate， pay more attention to update rule cause that might be wrong.
 
@@ -29,9 +29,7 @@
 >  14 swap so as to always manipulate the longer one 
 
 
-Same as overlapped list, need same len
+the output of node is depend on itself and depth, privious sum needs to go the next level;
 
-to manipulate nuique_ptr, use new pointer
 
-swap so as to manipulate the longer one
-
+case study.
