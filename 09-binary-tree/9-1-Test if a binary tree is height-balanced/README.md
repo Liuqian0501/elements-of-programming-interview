@@ -1,4 +1,4 @@
-# 9-1-Test if a binary tree is height-balanced
+# 9-1-Test if a binary tree is height-balanced (difference <= 1)
 
 >  1 keep the update rule in mind. If the program stagnate， pay more attention to update rule cause that might be wrong.
 
