@@ -27,15 +27,21 @@ namespace sortKvectors {
     };
     
     struct mycomparison{
+        bool reverse;
+        mycomparison(const bool& revPram = false){
+            reverse = revPram;
+        }
         bool operator() (const elementwithindex& lhs, const elementwithindex&rhs) const
         {
+            if(reverse) return lhs.value < rhs.value;
             return lhs.value > rhs.value;
         }
     };
     
     
     vector<int> MergeSortedArrays(const vector<vector<int>>& sorted_arrays) {
-        priority_queue<int, vector<elementwithindex>, mycomparison> queue_;
+        priority_queue<int, vector<elementwithindex>, mycomparison> queue_(mycomparison(false));
+        //priority_queue<int, vector<elementwithindex>, mycomparison> queue_(mycomparison(true));
         int len = 0;
         //push first element of each vector to queue
         for(int i = 0; i < sorted_arrays.size(); i++){
