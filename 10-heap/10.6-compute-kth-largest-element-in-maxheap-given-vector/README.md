@@ -28,4 +28,6 @@
 
 >  14 swap so as to always manipulate the longer one 
 
+>  15 kth largest better than klog(n) we can have klog(k) with O(k) more space
+
 use the index and value, store them in a structure.
