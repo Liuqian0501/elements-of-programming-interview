@@ -39,6 +39,10 @@ public:
 
 /*
  -------------------------------------------------
+ struct Person{
+    int age;
+ };
+ 
  struct CompareAge {
      bool operator()(Person const & p1, Person const & p2) {
          // return "true" if "p1" is ordered before "p2", for example:
@@ -49,14 +53,14 @@ public:
  priority_queue<Person, vector<Person>, CompareAge>
  
  --------------------------------------------------
- struct Person {
-    int age;
-     bool operator()(Person const & p1, Person const & p2) {
-         // return "true" if "p1" is ordered before "p2", for example:
-         return p1.age < p2.age;
+ struct element{
+     int value;
+     int index;
+     bool operator < (const element& that) const{
+         return value < that.value;
      }
- }
- priority_queue<Person, vector<Person>> queue_;
+ };
+ priority_queue<element, vector<element>> queue_;
  --------------------------------------------------
  */
 
