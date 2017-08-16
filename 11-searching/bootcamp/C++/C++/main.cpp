@@ -20,9 +20,9 @@ public:
         while(left <= right){
             int mid = left + (right - left)/2;
             if(A[mid] < i){
-                left = mid;
+                left = mid + 1;
             }else if(A[mid] > i){
-                right = mid;
+                right = mid - 1;
             }else{
                 return mid;
             }
