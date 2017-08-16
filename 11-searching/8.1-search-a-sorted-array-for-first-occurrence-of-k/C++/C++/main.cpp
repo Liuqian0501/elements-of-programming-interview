@@ -18,9 +18,9 @@ int SearchFirstofK(vector<int> A, int k){
     while(left <= right){
         int mid = left + (right - left)/2;
         if(A[mid] < k){
-            left = mid;
+            left = mid + 1;
         }else if(A[mid] > k){
-            right = mid;
+            right = mid - 1;
         }else{
             result = mid;
             break;
@@ -41,5 +41,6 @@ int main(int argc, const char * argv[]) {
     assert(e1 == 1);
     e1 = SearchFirstofK(T1, 6);
     assert(e1 == -1);
+    std::cout << "Success";
     return 0;
 }
